@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+    android:background="#fcdb80">
+
+
+    <TextView
+        android:id="@+id/rest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Restaurant Name"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/rest_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/rest_ph"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_below="@+id/rest_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/rest_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0021 Meter"
+        android:layout_below="@+id/rest_rate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp" />
+
+ <!--   <TextView
+        android:id="@+id/rest_rate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/rest_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> -->
+
+
+    <RatingBar
+        android:id="@+id/rest_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="true"
+        android:layout_below="@+id/rest_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/rest_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rest_image"
+        android:textStyle="bold"
+        android:text="New Delhi, India" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#B71C1C"
+        android:layout_below="@+id/rest_address"
+        android:layout_marginTop="8dp"
+        android:id="@+id/view" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Restaurant Locator</string>
+    <string name="gps_notification">GPS Access required to get current location</string>
+</resources>

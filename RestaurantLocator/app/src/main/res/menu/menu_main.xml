@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".LocatorActivity">
+<item android:id="@+id/dist_menu"
+    android:title="[Select Range]"
+    app:showAsAction="always">
+    <menu>
+        <item
+            android:id="@+id/dist1k"
+            android:title="500 Meter"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist2k"
+            android:title="1.00 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist3k"
+            android:title="1.50 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist4k"
+            android:title="2.00 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist5k"
+            android:title="3.00 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist6k"
+            android:title="5.00 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist7k"
+            android:title="10.0 KM"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/dist8k"
+            android:title="More than 10 KM"
+            app:showAsAction="never"/>
+    </menu>
+</item>
+</menu>

@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0ffb1"
+    tools:context=".RestaurantDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME...."
+        android:gravity="center"
+        android:textColor="#B71C1C"
+        android:id="@+id/tv102"
+        tools:layout_editor_absoluteY="85dp"
+        tools:layout_editor_absoluteX="80dp"
+        android:textSize="28dp"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L O A D I N G . . . . ."
+        android:textColor="#151851"
+        android:textStyle="italic"
+        android:id="@+id/tv101"
+        android:textSize="18dp"
+        android:background="#ffe2c8"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        tools:layout_editor_absoluteY="85dp"
+        tools:layout_editor_absoluteX="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/tv102"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_below="@+id/tv101"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linearLayout">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_weight="1"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    >
+
+    <ImageView
+        android:id="@+id/img101"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:src="@drawable/loading1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/img102"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:src="@drawable/loading1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        >
+        <ImageView
+            android:id="@+id/img103"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading1"
+            android:layout_margin="2dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/img104"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading1"
+            android:layout_margin="2dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv103"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="L O A D I N G . . . . ."
+        android:textColor="#151851"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="#f6dc84"
+        android:paddingLeft="12dp" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#37474F"
+        android:textColor="#FFF"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="DISCOVER RESTAURANT IN GOOGLE MAP"
+        android:layout_below="@+id/tv103"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp" />
+
+</RelativeLayout>
+    </ScrollView>
+
